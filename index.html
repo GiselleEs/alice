@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- =============================================
+       META E CONFIGURAÇÕES BÁSICAS
+       ============================================= -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alice Fernandes — Curadora literária, influencer de leitura e criadora do Clube das Páginas. Descubra recomendações, projetos e conexão com o universo dos livros." />
+  <meta name="author" content="Alice Fernandes" />
+  <title>Alice Fernandes | Curadora Literária</title>
+
+  <!-- Folha de estilos principal -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- =============================================
+       CABEÇALHO E NAVEGAÇÃO
+       ============================================= -->
+  <header class="header" id="topo">
+    <div class="container header__inner">
+
+      <!-- Logo / Nome da autora -->
+      <a href="#topo" class="header__logo" aria-label="Voltar ao topo">
+        Alice <span>Fernandes</span>
+      </a>
+
+      <!-- Botão hambúrguer (visível apenas no mobile) -->
+      <button class="header__toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+      </button>
+
+      <!-- Menu de navegação principal -->
+      <nav class="header__nav" id="navMenu" role="navigation" aria-label="Menu principal">
+        <ul class="header__nav-list">
+          <li><a href="#sobre" class="header__nav-link">Sobre</a></li>
+          <li><a href="#habilidades" class="header__nav-link">Habilidades</a></li>
+          <li><a href="#projetos" class="header__nav-link">Projetos</a></li>
+          <li><a href="#contato" class="header__nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- =============================================
+       SEÇÃO HERO — APRESENTAÇÃO INICIAL
+       ============================================= -->
+  <section class="hero" aria-label="Apresentação principal">
+    <div class="container hero__inner">
+
+      <!-- Texto principal do hero -->
+      <div class="hero__text fade-in">
+        <p class="hero__eyebrow">Olá, eu sou</p>
+        <h1 class="hero__title">Alice Fernandes</h1>
+        <p class="hero__subtitle">
+          Curadora literária apaixonada por histórias que transformam.<br />
+          Aqui você encontra leituras que acolhem, inspiram e conectam.
+        </p>
+        <div class="hero__actions">
+          <a href="#projetos" class="btn btn--primary">Conheça meus projetos</a>
+          <a href="#contato" class="btn btn--outline">Fale comigo</a>
+        </div>
+      </div>
+
+      <!-- Imagem / ilustração decorativa do hero -->
+      <div class="hero__visual fade-in fade-in--delay">
+        <div class="hero__avatar-wrapper">
+          <!-- Círculo decorativo com iniciais (substitua por uma foto real) -->
+          <div class="hero__avatar" aria-hidden="true">
+            <span class="hero__avatar-initials">AF</span>
+          </div>
+          <!-- Elementos flutuantes decorativos -->
+          <div class="hero__badge hero__badge--1" aria-hidden="true">📖</div>
+          <div class="hero__badge hero__badge--2" aria-hidden="true">✨</div>
+          <div class="hero__badge hero__badge--3" aria-hidden="true">🌸</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Onda decorativa na base do hero -->
+    <div class="hero__wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fff5f7"/>
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       SEÇÃO SOBRE — APRESENTAÇÃO PESSOAL
+       ============================================= -->
+  <section class="sobre section" id="sobre" aria-labelledby="sobre-titulo">
+    <div class="container">
+
+      <div class="section__header reveal">
+        <span class="section__tag">Quem sou eu</span>
+        <h2 class="section__title" id="sobre-titulo">Uma leitora que virou curadora</h2>
+      </div>
+
+      <div class="sobre__grid">
+
+        <!-- Bloco de texto biográfico -->
+        <div class="sobre__texto reveal">
+          <p>
+            Cresci rodeada de livros e aprendi cedo que uma boa história tem o poder de mudar a forma como enxergamos o mundo. Sou Alice Fernandes, curadora literária especializada em <strong>literatura contemporânea</strong>, com foco em narrativas que colocam mulheres no centro — histórias de amor, de descoberta e de pertencimento.
+          </p>
+          <p>
+            Comecei compartilhando resenhas nas redes sociais e, ao longo do tempo, construí uma comunidade de leitoras que buscam mais do que entretenimento: buscam <em>conexão emocional</em> com o que leem. Hoje, além de criar conteúdo, coordeno o <strong>Clube das Páginas</strong>, um espaço mensal de leitura compartilhada.
+          </p>
+          <p>
+            Acredito que cada livro certo, lido na hora certa, pode ser uma virada de chave. É isso que me move.
+          </p>
+        </div>
+
+        <!-- Cards de destaques pessoais -->
+        <div class="sobre__cards reveal">
+
+          <div class="sobre__card">
+            <span class="sobre__card-icon" aria-hidden="true">📚</span>
+            <h3 class="sobre__card-titulo">+200 livros</h3>
+            <p class="sobre__card-desc">resenhados e recomendados nas redes</p>
+          </div>
+
+          <div class="sobre__card">
+            <span class="sobre__card-icon" aria-hidden="true">👥</span>
+            <h3 class="sobre__card-titulo">Clube ativo</h3>
+            <p class="sobre__card-desc">com encontros mensais e comunidade online</p>
+          </div>
+
+          <div class="sobre__card">
+            <span class="sobre__card-icon" aria-hidden="true">💬</span>
+            <h3 class="sobre__card-titulo">Escrita crítica</h3>
+            <p class="sobre__card-desc">resenhas, artigos e curadoria de conteúdo</p>
+          </div>
+
+          <div class="sobre__card">
+            <span class="sobre__card-icon" aria-hidden="true">🌸</span>
+            <h3 class="sobre__card-titulo">Protagonismo</h3>
+            <p class="sobre__card-desc">feminino em foco em cada seleção</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       SEÇÃO HABILIDADES — COMPETÊNCIAS PRINCIPAIS
+       ============================================= -->
+  <section class="habilidades section section--alt" id="habilidades" aria-labelledby="habilidades-titulo">
+    <div class="container">
+
+      <div class="section__header reveal">
+        <span class="section__tag">O que eu faço</span>
+        <h2 class="section__title" id="habilidades-titulo">Habilidades &amp; Interesses</h2>
+      </div>
+
+      <!-- Lista de habilidades principais -->
+      <div class="habilidades__grid">
+
+        <article class="habilidade__card reveal">
+          <div class="habilidade__icon" aria-hidden="true">🔍</div>
+          <h3 class="habilidade__titulo">Curadoria Literária</h3>
+          <p class="habilidade__desc">
+            Seleciono obras com critério e sensibilidade, criando listas temáticas que guiam leitoras a descobertas significativas — do romance ao ensaio.
+          </p>
+        </article>
+
+        <article class="habilidade__card reveal">
+          <div class="habilidade__icon" aria-hidden="true">✍️</div>
+          <h3 class="habilidade__titulo">Escrita Crítica</h3>
+          <p class="habilidade__desc">
+            Produzo resenhas aprofundadas e artigos que analisam narrativa, estilo e impacto cultural das obras, com linguagem acessível e envolvente.
+          </p>
+        </article>
+
+        <article class="habilidade__card reveal">
+          <div class="habilidade__icon" aria-hidden="true">📱</div>
+          <h3 class="habilidade__titulo">Criação de Conteúdo</h3>
+          <p class="habilidade__desc">
+            Desenvolvo conteúdo para redes sociais com identidade visual coesa, storytelling autêntico e estratégia de engajamento para comunidades leitoras.
+          </p>
+        </article>
+
+        <article class="habilidade__card reveal">
+          <div class="habilidade__icon" aria-hidden="true">💡</div>
+          <h3 class="habilidade__titulo">Comunicação Digital</h3>
+          <p class="habilidade__desc">
+            Construo pontes entre autoras, editoras e leitoras através de uma comunicação clara, empática e estratégica no ambiente digital.
+          </p>
+        </article>
+
+      </div>
+
+      <!-- Bloco de interesses pessoais -->
+      <div class="interesses reveal">
+        <h3 class="interesses__titulo">Meus interesses</h3>
+        <div class="interesses__tags" role="list" aria-label="Tópicos de interesse">
+          <span class="tag" role="listitem">Clubes de leitura</span>
+          <span class="tag" role="listitem">Protagonismo feminino</span>
+          <span class="tag" role="listitem">Romance contemporâneo</span>
+          <span class="tag" role="listitem">Ficção emocional</span>
+          <span class="tag" role="listitem">Autoconhecimento</span>
+          <span class="tag" role="listitem">Literatura brasileira</span>
+          <span class="tag" role="listitem">Bookstagram</span>
+          <span class="tag" role="listitem">Comunidades leitoras</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       SEÇÃO PROJETOS — TRABALHOS E EXPERIÊNCIAS
+       ============================================= -->
+  <section class="projetos section" id="projetos" aria-labelledby="projetos-titulo">
+    <div class="container">
+
+      <div class="section__header reveal">
+        <span class="section__tag">Minha trajetória</span>
+        <h2 class="section__title" id="projetos-titulo">Projetos &amp; Experiências</h2>
+      </div>
+
+      <!-- Filtros de categoria dos projetos -->
+      <div class="projetos__filtros reveal" role="group" aria-label="Filtrar projetos por categoria">
+        <button class="filtro-btn filtro-btn--ativo" data-filtro="todos">Todos</button>
+        <button class="filtro-btn" data-filtro="clube">Clube de Leitura</button>
+        <button class="filtro-btn" data-filtro="conteudo">Conteúdo</button>
+        <button class="filtro-btn" data-filtro="escrita">Escrita</button>
+      </div>
+
+      <!-- Grade de cards de projetos -->
+      <!-- Cada card tem o atributo data-categoria para o filtro JS -->
+      <div class="projetos__grid" id="projetosGrid">
+
+        <article class="projeto__card reveal" data-categoria="clube">
+          <div class="projeto__card-topo projeto__card-topo--rosa">
+            <span class="projeto__card-emoji" aria-hidden="true">📖</span>
+          </div>
+          <div class="projeto__card-corpo">
+            <span class="projeto__card-tag">Clube de Leitura</span>
+            <h3 class="projeto__card-titulo">Clube das Páginas</h3>
+            <p class="projeto__card-desc">
+              Clube de leitura mensal com encontros online e presenciais. Cada mês exploramos um livro com protagonismo feminino, com debate guiado, lista de questões e espaço para troca genuína entre leitoras.
+            </p>
+            <ul class="projeto__card-detalhes">
+              <li>Encontros mensais ao vivo</li>
+              <li>Comunidade no WhatsApp</li>
+              <li>Guia de leitura exclusivo</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="projeto__card reveal" data-categoria="conteudo">
+          <div class="projeto__card-topo projeto__card-topo--lilas">
+            <span class="projeto__card-emoji" aria-hidden="true">📱</span>
+          </div>
+          <div class="projeto__card-corpo">
+            <span class="projeto__card-tag">Conteúdo Digital</span>
+            <h3 class="projeto__card-titulo">@alicelesbooks</h3>
+            <p class="projeto__card-desc">
+              Perfil literário no Instagram com resenhas visuais, indicações temáticas e conteúdo sobre a experiência de ler. Um espaço que mistura estética, emoção e crítica literária acessível.
+            </p>
+            <ul class="projeto__card-detalhes">
+              <li>Resenhas semanais</li>
+              <li>Listas temáticas</li>
+              <li>Stories interativos</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="projeto__card reveal" data-categoria="escrita">
+          <div class="projeto__card-topo projeto__card-topo--peach">
+            <span class="projeto__card-emoji" aria-hidden="true">✍️</span>
+          </div>
+          <div class="projeto__card-corpo">
+            <span class="projeto__card-tag">Escrita</span>
+            <h3 class="projeto__card-titulo">Newsletter Literária</h3>
+            <p class="projeto__card-desc">
+              Publicação quinzenal enviada por e-mail com análise de uma obra, sugestões de leitura para o mês e uma reflexão pessoal sobre literatura e vida. Escrita com cuidado e intimidade.
+            </p>
+            <ul class="projeto__card-detalhes">
+              <li>Análise aprofundada</li>
+              <li>Tom pessoal e íntimo</li>
+              <li>Curadoria mensal</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="projeto__card reveal" data-categoria="conteudo">
+          <div class="projeto__card-topo projeto__card-topo--verde">
+            <span class="projeto__card-emoji" aria-hidden="true">🎙️</span>
+          </div>
+          <div class="projeto__card-corpo">
+            <span class="projeto__card-tag">Conteúdo Digital</span>
+            <h3 class="projeto__card-titulo">Podcast "Entre Capítulos"</h3>
+            <p class="projeto__card-desc">
+              Episódios mensais em que converso com outras leitoras, escritoras e especialistas sobre livros, escrita e o papel da literatura na vida das mulheres. Leveza e profundidade em cada episódio.
+            </p>
+            <ul class="projeto__card-detalhes">
+              <li>Entrevistas com autoras</li>
+              <li>Debates sobre obras</li>
+              <li>Disponível em todas as plataformas</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="projeto__card reveal" data-categoria="escrita">
+          <div class="projeto__card-topo projeto__card-topo--azul">
+            <span class="projeto__card-emoji" aria-hidden="true">📝</span>
+          </div>
+          <div class="projeto__card-corpo">
+            <span class="projeto__card-tag">Escrita</span>
+            <h3 class="projeto__card-titulo">Guias de Leitura</h3>
+            <p class="projeto__card-desc">
+              Materiais gratuitos e pagos com roteiros de leitura, perguntas para reflexão e contexto histórico-literário de obras selecionadas. Ideais para clubes de leitura e leitoras independentes.
+            </p>
+            <ul class="projeto__card-detalhes">
+              <li>Formato PDF editável</li>
+              <li>Questões de debate</li>
+              <li>Contexto da obra</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="projeto__card reveal" data-categoria="clube">
+          <div class="projeto__card-topo projeto__card-topo--dourado">
+            <span class="projeto__card-emoji" aria-hidden="true">🌸</span>
+          </div>
+          <div class="projeto__card-corpo">
+            <span class="projeto__card-tag">Clube de Leitura</span>
+            <h3 class="projeto__card-titulo">Maratona de Leitura</h3>
+            <p class="projeto__card-desc">
+              Evento especial realizado duas vezes ao ano, com desafios de leitura, bingo literário, indicações surpresa e premiação para as participantes mais engajadas. Uma festa para quem ama ler.
+            </p>
+            <ul class="projeto__card-detalhes">
+              <li>30 dias de desafios</li>
+              <li>Bingo literário</li>
+              <li>Premiação especial</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       SEÇÃO CONTATO — FORMULÁRIO E REDES SOCIAIS
+       ============================================= -->
+  <section class="contato section section--alt" id="contato" aria-labelledby="contato-titulo">
+    <div class="container">
+
+      <div class="section__header reveal">
+        <span class="section__tag">Vamos conversar</span>
+        <h2 class="section__title" id="contato-titulo">Entre em contato</h2>
+        <p class="section__subtitulo">
+          Seja para parcerias, dúvidas sobre o clube ou só para trocar uma ideia sobre livros — estou aqui.
+        </p>
+      </div>
+
+      <div class="contato__grid">
+
+        <!-- Formulário de contato -->
+        <form class="contato__form reveal" id="contatoForm" novalidate aria-label="Formulário de contato">
+
+          <div class="form__grupo">
+            <label class="form__label" for="nome">Seu nome</label>
+            <input
+              class="form__input"
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Como posso te chamar?"
+              required
+              autocomplete="name"
+            />
+            <!-- Mensagem de erro acessível -->
+            <span class="form__erro" id="nomeErro" role="alert" aria-live="polite"></span>
+          </div>
+
+          <div class="form__grupo">
+            <label class="form__label" for="email">E-mail</label>
+            <input
+              class="form__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seu@email.com"
+              required
+              autocomplete="email"
+            />
+            <span class="form__erro" id="emailErro" role="alert" aria-live="polite"></span>
+          </div>
+
+          <div class="form__grupo">
+            <label class="form__label" for="assunto">Assunto</label>
+            <select class="form__input form__select" id="assunto" name="assunto" required>
+              <option value="" disabled selected>Selecione um assunto</option>
+              <option value="clube">Quero entrar no Clube das Páginas</option>
+              <option value="parceria">Proposta de parceria</option>
+              <option value="newsletter">Assinar a newsletter</option>
+              <option value="outro">Outro assunto</option>
+            </select>
+            <span class="form__erro" id="assuntoErro" role="alert" aria-live="polite"></span>
+          </div>
+
+          <div class="form__grupo">
+            <label class="form__label" for="mensagem">Mensagem</label>
+            <textarea
+              class="form__input form__textarea"
+              id="mensagem"
+              name="mensagem"
+              placeholder="Conta um pouco mais sobre o que você precisa..."
+              rows="5"
+              required
+            ></textarea>
+            <span class="form__erro" id="mensagemErro" role="alert" aria-live="polite"></span>
+          </div>
+
+          <button class="btn btn--primary btn--full" type="submit">Enviar mensagem</button>
+
+          <!-- Feedback de envio (controlado pelo JS) -->
+          <div class="form__feedback" id="formFeedback" role="status" aria-live="polite" hidden></div>
+
+        </form>
+
+        <!-- Informações de contato e redes sociais -->
+        <aside class="contato__info reveal" aria-label="Informações de contato">
+
+          <div class="contato__info-bloco">
+            <h3 class="contato__info-titulo">Onde me encontrar</h3>
+            <p class="contato__info-texto">
+              Estou mais ativa no Instagram, mas também respondo e-mails com carinho. Se quiser entrar para o clube, o melhor caminho é pelo formulário ao lado.
+            </p>
+          </div>
+
+          <!-- Links para redes sociais -->
+          <ul class="contato__redes" aria-label="Redes sociais">
+            <li>
+              <a href="#" class="contato__rede-link" aria-label="Instagram de Alice Fernandes">
+                <span class="contato__rede-icon" aria-hidden="true">📸</span>
+                <span>@alicelesbooks</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="contato__rede-link" aria-label="TikTok de Alice Fernandes">
+                <span class="contato__rede-icon" aria-hidden="true">🎵</span>
+                <span>@alicelesbooks</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:alice@alicefernandes.com.br" class="contato__rede-link" aria-label="E-mail de Alice Fernandes">
+                <span class="contato__rede-icon" aria-hidden="true">✉️</span>
+                <span>alice@alicefernandes.com.br</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Citação inspiracional -->
+          <blockquote class="contato__citacao">
+            <p>"Um livro é um sonho que você segura nas mãos."</p>
+            <cite>— Neil Gaiman</cite>
+          </blockquote>
+
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       RODAPÉ
+       ============================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+
+      <div class="footer__logo">
+        Alice <span>Fernandes</span>
+      </div>
+
+      <p class="footer__tagline">Curadora literária · Criadora do Clube das Páginas</p>
+
+      <nav class="footer__nav" aria-label="Navegação do rodapé">
+        <a href="#sobre" class="footer__nav-link">Sobre</a>
+        <a href="#habilidades" class="footer__nav-link">Habilidades</a>
+        <a href="#projetos" class="footer__nav-link">Projetos</a>
+        <a href="#contato" class="footer__nav-link">Contato</a>
+      </nav>
+
+      <p class="footer__copy">
+        &copy; <span id="anoAtual"></span> Alice Fernandes. Feito com amor e muitos livros.
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!-- =============================================
+       BOTÃO VOLTAR AO TOPO
+       ============================================= -->
+  <button
+    class="btn-topo"
+    id="btnTopo"
+    aria-label="Voltar ao topo da página"
+    title="Voltar ao topo"
+    hidden
+  >
+    ↑
+  </button>
+
+
+  <!-- Script principal -->
+  <script src="script.js"></script>
+
+</body>
+</html>
